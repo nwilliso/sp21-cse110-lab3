@@ -33,7 +33,8 @@
 
         <main>
             <hr>
-            <section>
+            <div class="flex">
+            <div>
                 <h2 id="Monday">
                     Monday <span class="date">April 5th, 2021</span>
                 </h2>
@@ -62,9 +63,9 @@
                     Bob, my cat, represents me here because I had a tiring day.
                 </details>
 
-            </section>
+            </div>
             <hr>
-            <section>
+            <div>
                 <h2 id="Tuesday">
                     Tuesday <span class="date">April 6th, 2021</span>
                 </h2>
@@ -96,9 +97,9 @@
                     This is a song from <i>Monty Python's Life of Brian</i> and it's relevant because I have to look on the bright side of being sick.
                 </details>
 
-            </section>
+            </div>
             <hr>
-            <section>
+            <div>
                 <h2 id="Wednesday">
                     Wednesday <span class="date">April 7th, 2021</span>
                 </h2>
@@ -129,14 +130,19 @@
                     This is a video of me and my cat, Bob, dancing on this very day.
                 </details>
 
-            </section>
+            </div>
+            </div>
             <hr>
-            <section>
-                <h2>Make New Entry</h2>
+            
+            <h2>Make New Entry</h2>
                 <form>
                     <fieldset>
+                        <div class="grid">
+                        <div class="item-date">
                         <p><b>Select the date:</b></p>
                         <input type="date" value="2021-04-08" min="2021-04-08">
+                        </div>
+                        <div class="item-overall">
                         <p><b>Select how the overall day went:</b></p>
                         <input type="radio" id="great" value="great">
                         <label for="great">Great</label>
@@ -146,13 +152,19 @@
                         <label for="okay">Okay</label>
                         <input type="radio" id="bad" value="bad">
                         <label for="bad">Bad</label>
+                        </div>
                         <br>
+                        <div class="item-summary">
                         <p><b>Give a summary of the day:</b></p>
                         <textarea rows="10" cols="70"></textarea>
+                        </div>
                         <br>
+                        <div class="item-highlight">
                         <p><b>Type one highlight of the day:</b></p>
                         <input type="text">
+                        </div>
                         <br>
+                        <div class="item-classes">
                         <p><b>Select what classes you had today:</b></p>
                         <input type="checkbox" id="7l" value="7l">
                         <label for="7l">CSE 107 lecture</label>
@@ -170,12 +182,16 @@
                         <label for="2ll">CSE 142L lecture</label>
                         <input type="checkbox" id="u" value="u">
                         <label for="u">USP 137</label>
+                        </div>
+                        <div class="item-media">
                         <p><b>Select type of media:</b></p>
                         <select>
                             <option value="img">Image</option>
                             <option value="audio">Audio</option>
                             <option value="video">Video</option>
                         </select>
+                        </div>
+                        <div class="item-tags">
                         <p><b>Select hidden tags for entry:</b></p>
                         <input list="tags"/>
                         <datalist id="tags">
@@ -185,13 +201,16 @@
                             <option value="love">
                             <option value="confused">
                         </datalist>
+                        </div>
                         <br>
                         <br>
                         <br>
+                        <div class="item-button">
                         <button>Post Entry</button>
+                        </div>
+                        </div>
                     </fieldset>
                 </form>
-            </section>
             <hr>
         </main>
 
