@@ -1,1 +1,66 @@
 /*Starter comment for this new CSS file*/
+header { /*Moves title with scroll*/
+    position: fixed;
+    width: 500px;
+    height: 100px;
+    background-color: grey;
+}
+h2 { /*Formats entry days*/
+    color: rgba(0, 26, 110, 0.9);
+    text-align: center;
+    text-decoration: underline dotted;
+}
+h3 { /*Formats sub headings*/
+    color: #5900ff;
+    position: static;
+    left: 30px;
+}
+strong { /*Formats strong elements*/
+    color: hsla(0, 100%, 50%, 0.6);
+    display: inline-block;
+}
+body { /*Adds background color below 1000px*/
+    background-color: lightblue;
+}
+@media only screen and (max-width: 1000px) {  /*Adds background color above 1000px*/
+    body {
+      background-color: lightgreen;
+    }
+}
+nav { /*Cool box around nav*/
+    padding: 40Q;
+    border-style: solid;
+    border-color: black;
+    border-width: 7pt;
+    border-radius: 500px;
+    min-width: 1000px;
+    max-width: 1200px;
+}
+footer { /*Even cooler box around footer*/
+    margin-top: 2em;
+    margin-bottom: 7ch;
+    margin-left: 4vh;
+    margin-right: 1vmax;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    border-style: dashed;
+    border-color: silver;
+    border-width: 7pt;
+    border-radius: 500px;
+}
+form { /*Auto margin for form*/
+    margin: auto
+}
+em { /*Formats em elements*/
+    display: inline;
+}
+button:hover { /*Changes font and color when hovered over*/
+    color: blue;
+    font-family: 'Zen Dots', cursive;
+    src: url(https://fonts.gstatic.com)
+}
+a:active { /*Changes color when clicked*/
+    color: magenta;
+}
