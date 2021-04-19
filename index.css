@@ -1,5 +1,5 @@
 /*Starter comment for this new CSS file*/
-header { /*Moves title with scroll*/
+div.top { /*Moves title with scroll*/
     position: fixed;
     width: 500px;
     height: 100px;
@@ -26,7 +26,7 @@ body { /*Adds background color below 1000px*/
       background-color: lightblue;
     }
 }
-nav { /*Cool box around nav*/
+*.menu { /*Cool box around nav*/
     padding: 40Q;
     border-style: solid;
     border-color: black;
@@ -98,21 +98,41 @@ a:active { /*Changes color when clicked*/
     padding: 15px;
     margin: 10px;
 }
-.item-date, .item-button { /*First row*/
+#item-date, #item-button { /*First row*/
     grid-row: 1/2;
 }
-.item-overall, .item-summary, .item-highlight { /*Second row*/
+#item-overall, #item-summary, #item-highlight { /*Second row*/
     grid-row: 2/3;
 }
-.item-media, .item-classes, .item-tags { /*Third row*/
+#item-media, #item-classes, #item-tags { /*Third row*/
     grid-row: 3/4;
 }
-.item-date, .item-overall, .item-media { /*First column*/
+#item-date, #item-overall, #item-media { /*First column*/
     grid-column: 1/2;
 }
-.item-summary, .item-classes { /*Second column*/
+#item-summary, #item-classes { /*Second column*/
     grid-column: 2/3;
 }
-.item-button, .item-highlight, .item-tags { /*Third column*/
+#item-button, #item-highlight, #item-tags { /*Third column*/
     grid-column: 3/4;
+}
+
+a[href^="#"] { /*All relative links highlighted*/
+    background-color: yellow;
+}
+
+main li { /*All list elements in main red*/
+    color: tomato;
+}
+
+ol + h3 { /*Bigger Media of the Day*/
+    font-size: 50px;
+}
+
+h2 ~ p { /*All paragraphs in entries navy*/
+    color: navy;
+}
+
+#item-button { /*Bring attention to button by having different bg color*/
+    background-color: orange;
 }
